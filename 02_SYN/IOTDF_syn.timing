@@ -1,0 +1,62 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IOTDF
+Version: U-2022.12
+Date   : Sun Nov 19 23:37:07 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: ind_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: REG_reg[10][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  ind_reg[2]/CK (DFFRX1)                   0.00       1.00 r
+  ind_reg[2]/Q (DFFRX1)                    0.58       1.58 f
+  U2007/Y (NOR2X1)                         0.15       1.74 r
+  U2021/Y (INVX1)                          0.10       1.83 f
+  U2022/Y (OAI21XL)                        0.15       1.99 r
+  U2024/Y (NOR2X1)                         0.14       2.12 f
+  U2037/Y (AO22X1)                         0.26       2.39 f
+  U1617/Y (OAI21XL)                        0.20       2.59 r
+  U2039/Y (NAND4X1)                        0.21       2.80 f
+  U2060/Y (NAND2X2)                        0.12       2.92 r
+  U2061/Y (XOR2X4)                         0.11       3.03 r
+  U2062/Y (XOR2X4)                         0.16       3.18 f
+  U2063/Y (AOI2BB2X2)                      0.24       3.42 f
+  U2064/Y (AOI2BB2X2)                      0.23       3.65 f
+  U2066/Y (NAND2X1)                        0.09       3.74 r
+  U1589/Y (OAI21XL)                        0.09       3.82 f
+  U2067/Y (AOI21X1)                        0.12       3.94 r
+  U2068/Y (OAI21X1)                        0.14       4.07 f
+  U2175/Y (NAND2X1)                        0.19       4.26 r
+  U1704/Y (OAI211XL)                       0.11       4.38 f
+  REG_reg[10][1]/D (DFFRX1)                0.00       4.38 f
+  data arrival time                                   4.38
+
+  clock clk (rise edge)                    3.70       3.70
+  clock network delay (ideal)              1.00       4.70
+  clock uncertainty                       -0.10       4.60
+  REG_reg[10][1]/CK (DFFRX1)               0.00       4.60 r
+  library setup time                      -0.22       4.38
+  data required time                                  4.38
+  -----------------------------------------------------------
+  data required time                                  4.38
+  data arrival time                                  -4.38
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
